@@ -1,0 +1,141 @@
+
+body {
+  background-color: #F5BEBB;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+h2,h3 {
+  font-family: "Kosugi Maru", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 24px;
+}
+
+
+p {
+  font-family: "Noto Sans JP", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+}
+
+.oowaku {
+  display: flex;
+  justify-content: center;
+}
+
+section {
+  border-width: 5px;
+  border-color: rgb(125, 104, 104);
+  border-style: solid;
+  border-radius: 50px;
+  padding: 16px;
+  margin-bottom: 8px;
+  background-color: #F3E4E0;
+  height: 400px;
+  width: 800px;
+    }
+
+.waku{
+  display: flex;
+  margin: 20px;
+}
+
+.title {
+  margin-left: 40px;
+}
+
+
+img {
+  height: 300px;
+  border-radius: 5%;
+}
+
+@media (max-width: 850px) {
+   section {
+    width: 90%;
+    height: auto;
+    border-radius: 30px;
+   }
+
+   .waku {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+   }
+
+   img {
+    width: 90%;
+    height: auto;
+   }
+
+   .title {
+    margin-left: 0;
+    margin-top: 10px;
+   }
+
+   h1 {
+    font-size: 32px;
+   }
+
+   p{
+    font-size: 18px;
+   }
+   
+}
+
+.day-header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 5px;
+    background: #F5BEBB;  /* 背景色に合わせる */
+    z-index: 1000;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+/* ボタンデザイン */
+.top-button {
+    font-family: "Kosugi Maru", sans-serif;
+    font-size: 18px;
+    padding: 8px 16px;
+    background: #F3E4E0;
+    border-radius: 20px;
+    border: 2px solid #ccb3b3;
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+/* ホバー時のアニメーション */
+.top-button:hover {
+    background: #ffe3d9;
+    transform: translateY(-3px);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15);
+}
+
+/* スマホ時は横スクロール可能 */
+@media (max-width: 850px) {
+    .day-header {
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .top-button {
+        flex-shrink: 0;
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+}
