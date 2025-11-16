@@ -100,12 +100,12 @@ img {
     justify-content: center;
     gap: 10px;
     padding: 10px 5px;
-    background: #F5BEBB;  /* 背景色に合わせる */
+    background: #F5BEBB;  
     z-index: 1000;
     border-bottom: 3px solid rgba(255, 255, 255, 0.4);
 }
 
-/* ボタンデザイン */
+
 .top-button {
     font-family: "Kosugi Maru", sans-serif;
     font-size: 18px;
@@ -119,14 +119,14 @@ img {
     transition: all 0.2s ease;
 }
 
-/* ホバー時のアニメーション */
+
 .top-button:hover {
     background: #ffe3d9;
     transform: translateY(-3px);
     box-shadow: 0 3px 6px rgba(0,0,0,0.15);
 }
 
-/* スマホ時は横スクロール可能 */
+
 @media (max-width: 850px) {
     .day-header {
         overflow-x: auto;
@@ -138,4 +138,8 @@ img {
         font-size: 16px;
         padding: 6px 12px;
     }
+}
+
+section h2 {
+  scroll-margin-top: 100px; 
 }
